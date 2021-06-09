@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+#game-app {
+    border: 1px solid blue;
+    width: 500px;
+    height: 500px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: blue;
+}
+
+.header > * {
+    color: #eeeeee;
+}
+
+.header_turn {
+    padding: 12px;
+}
+
+.header_status {
+    padding: 12px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header_restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.board {
+    display: grid;
+    background: #cccccc;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.board_tile {
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: cursive;
+    color: #222222;
+}
+
+.board_tile:hover {
+    background: #e7b587;
+}
+
+.board_tile_winner {
+    color: orange;
+}
