@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-Learn to build TicTacToe using vanilla JavaScript 
+Learn to build TicTacToe using HTML, CSS and just vanilla JavaScript!
